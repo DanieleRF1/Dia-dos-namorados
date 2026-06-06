@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(to right, #6a3dad, #9b6fe8, #c59ac5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.textocima {
+  top: 20px;
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.container {
+  cursor: pointer;
+}
+
+.envelope {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background: #8a5be2;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+/* Aba do envelope */
+.tampa {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #6a3dad;
+  clip-path: polygon(0 0, 50% 60%, 100% 0);
+  transform-origin: top;
+  transition: 0.5s;
+}
+
+/* Carta */
+.cartaescondida {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  background: #fff;
+  color: #4a2a7a;
+  top: 100%;
+  left: 5%;
+  border-radius: 6px;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+/* Estado aberto */
+.envelope.aberto .tampa {
+  transform: rotateX(180deg);
+}
+
+.envelope.aberto .cartaescondida {
+  top: 5%;
+}

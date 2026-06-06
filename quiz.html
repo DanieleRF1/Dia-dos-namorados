@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <script src="quiz.js"></script>
+    <title>Quiz</title>
+</head>
+
+<body>
+    <section id="resultado" style="display: none;">
+        <h2>Resultado do Quiz</h2>
+        <p id="textoResultado"></p>
+    </section>
+    <header>
+        <h1>Quiz interativo sobre nós</h1>
+        <p> Vamos descobrir se você lembra da nossa história!</p>
+    </header>
+    <main>
+        <!--Pergunta 1: Primeiro beijo-->
+        <div class="caixa">
+            <section id="p1">
+                <h2>Qual lugar foi nosso primeiro beijo?</h2>
+                <div class="opcoes" id="ops1">
+                    <button type="button" onclick="selecionarOpcao(this, 'pergunta1')">Nova américa</button>
+                    <button type="button" onclick="selecionarOpcao(this, 'pergunta1')">Meier</button>
+                    <button type="button" onclick="selecionarOpcao(this, 'pergunta1')">Norte shopping</button>
+                    <button type="button" onclick="selecionarOpcao(this, 'pergunta1')">Praça da bandeira</button>
+                </div>
+                <button class="btn" type="button" onclick="proximaPergunta()">Próxima</button>
+                <button class="btn" type="button" onclick="window.location.href='index.html'">Voltar</button>
+            </section>
+        </div>
+
+        <!--Pergunta 2: Data de namoro-->
+        <div class="caixa">
+        <section id="p2">
+            <h2>Qual a data oficial do pedido de namoro?</h2>
+            <form>
+                <input type="date" id="p2" name="pergunta2">
+            </form>
+        </section>
+        </div>
+        <!--Pergunta 3: Texto-->
+        <div class="caixa">
+        <section>
+            <h2>Qual cidade ficamos noivas?</h2>
+            <form>
+                <input type="text" id="p3" name="pergunta3">
+            </form>
+        </section>
+        </div>
+        <!--Pergunta 4: seleção múltipla-->
+        <div class="caixa">
+        <section>
+            <h2></h2>
+        </section>
+        </div>
+    </main>
+</body>
+
+</html>

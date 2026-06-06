@@ -23,40 +23,38 @@
         <div class="caixa">
             <section id="p1">
                 <h2>Qual lugar foi nosso primeiro beijo?</h2>
-                <div class="opcoes" id="ops1">
+                <div class="opcoes">
                     <button type="button" onclick="selecionarOpcao(this, 'pergunta1')">Nova américa</button>
                     <button type="button" onclick="selecionarOpcao(this, 'pergunta1')">Meier</button>
                     <button type="button" onclick="selecionarOpcao(this, 'pergunta1')">Norte shopping</button>
                     <button type="button" onclick="selecionarOpcao(this, 'pergunta1')">Praça da bandeira</button>
                 </div>
-                <button class="btn" type="button" onclick="proximaPergunta()">Próxima</button>
+                <button class="btn" type="button" onclick="validarPergunta1()">Próxima</button>
                 <button class="btn" type="button" onclick="window.location.href='index.html'">Voltar</button>
             </section>
         </div>
 
         <!--Pergunta 2: Data de namoro-->
         <div class="caixa">
-        <section id="p2">
-            <h2>Qual a data oficial do pedido de namoro?</h2>
-            <form>
-                <input type="date" id="p2" name="pergunta2">
-            </form>
-        </section>
+            <section id="p2">
+                <h2>Qual a data oficial do pedido de namoro?</h2>
+                <input type="date" id="respostaData">
+                <button class="btn" type="button" onclick="validarPergunta2()">Responder</button>
+            </section>
         </div>
         <!--Pergunta 3: Texto-->
         <div class="caixa">
-        <section>
-            <h2>Qual cidade ficamos noivas?</h2>
-            <form>
-                <input type="text" id="p3" name="pergunta3">
-            </form>
-        </section>
+            <section id="p3">
+                <h2>Qual cidade ficamos noivas?</h2>
+                <input type="text" id="respostaTexto" placeholder="Digite sua resposta aqui">
+                <button class="btn" type="button" onclick="validarPergunta3()">Responder</button>
+            </section>
         </div>
         <!--Pergunta 4: seleção múltipla-->
         <div class="caixa">
-        <section>
-            <h2></h2>
-        </section>
+            <section id="p4">
+                <h2></h2>
+            </section>
         </div>
     </main>
 </body>

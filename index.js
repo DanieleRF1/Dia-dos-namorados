@@ -1,4 +1,3 @@
-console.log("JavaScript carregado!");
 const slides = document.querySelector('.slides');
 const imagens = document.querySelectorAll('.slides img');
 

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e8d5ff, #f6e6ff, #d9c2ff );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.caixa {
+    width: 500px;
+    height: 100px;
+    padding: 10px;
+    background: white;
+}
+
+h2 {
+    text-align: center;
+}
+
+#p2, #p3, #p4 {
+    display: none;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: white;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.opcoes button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #d9c2ffb6;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+}
+
+.opcoes button:hover {
+    background-color: #a065ff;
+}
+
+.opcoes button.selecionada {
+    background-color: #a065ff;
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin: 3px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 20px;
+    background-color: #c9a2ff;
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #a065ff;
+}
+
+input[type="date"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    box-sizing: border-box;
+    border: 2px solid #c9a2ff;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+#resultado {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 500px;
+    max-width: 90%;
+
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    text-align: center;
+}
+
+
+
